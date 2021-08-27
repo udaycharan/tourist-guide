@@ -1,0 +1,265 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+    width: 100vw;
+    height:100vh;
+
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+}
+
+#text-size-signup{
+    font-size: 1.5rem; 
+    margin: 3rem 0 0 2rem; 
+    color:#BE2F29;
+    font-weight:400;
+    
+}
+
+#main-letter1-signup{
+    font-weight: 600;
+    color:#1A2C42;
+}
+
+#main-letter2-signup{
+    font-weight: 600;
+    color: #ECAF44;
+}
+
+#dotcom-signup{
+    color: #ECAF44;
+    font-weight: 500;
+}
+
+
+#text-size-signup:hover{
+    cursor: pointer;
+}
+
+.form-container{
+    background-color: rgba(250, 244, 244, 0.507);
+    box-shadow: 2px 2px 4px #a4a5a2;
+    min-width: 40%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .4rem;
+    align-items: center;
+}
+
+.inputs-container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.names{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.first-name-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.first-name-input label{
+    font-weight:600;
+}
+
+.lastname-name-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.lastname-name-input label{
+    font-weight:600;
+}
+
+#firstname{
+    padding: .7rem;
+    border-radius: .3rem;
+    background-color: rgba(250, 244, 244, 0.507);
+    box-shadow: 3px 3px 3px rgba(206, 202, 202, 0.795);
+    width: 70%;
+    font-size: .8rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    border: 1px solid #939491;
+}
+
+#lastname{
+    padding: .7rem;
+    background-color: rgba(250, 244, 244, 0.507);
+    box-shadow: 3px 3px 4px rgba(224, 219, 219, 0.795);
+    width: 70%;
+    height: 2.4rem;
+    font-size: .8rem;
+    border-radius: .3rem;
+    margin-right: 1rem;
+    border: 1px solid #939491;
+}
+
+.email{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.email label{
+    font-weight:600;
+}
+
+#email{
+    background-color: rgba(248, 248, 248, 0.849);
+    box-shadow: 3px 3px 4px rgba(224, 219, 219, 0.795);
+    padding: .7rem;
+    border: none;
+    width: 85%;
+    font-size: .8rem;
+    height: 2.4rem;
+    border-radius: .3rem;
+    border: 1px solid #939491;
+}
+
+#password-1{
+    background-color: rgba(250, 244, 244, 0.507);
+    box-shadow: 3px 3px 4px rgba(224, 219, 219, 0.795);
+    padding: .7rem;
+    border: none;
+    width: 85%;
+    font-size: .8rem;
+    height: 2.4rem;
+    border-radius: .3rem;
+    border: 1px solid #939491;
+}
+
+#password-2{
+    background-color: rgba(250, 244, 244, 0.507);
+    box-shadow: 3px 3px 4px rgba(235, 232, 232, 0.795);
+    padding: .7rem;
+    border: none;
+    width: 85%;
+    font-size: .8rem;
+    height: 2.4rem;
+    border-radius: .3rem;
+    border: 1px solid #939491;
+}
+
+.password{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.password label{
+    font-weight:600;
+}
+
+.password-confirm{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.password-confirm label{
+    font-weight:600;
+}
+
+#signup-btn{
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    background-color: #BE2F29;
+    box-shadow: 3px 4px 5px rgba(209, 204, 204, 0.795);
+    border-radius: .4rem;
+    padding: .5rem 2rem;
+    margin: 2rem 3rem 0 0;
+
+}
+
+#login-link{
+    font-weight: 600;
+    color:#1A2C42;
+    margin: 1rem 2.3rem 0 1rem;
+    text-decoration: none;
+
+}
+
+#login-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#text{
+    color: #a4a5a2;
+    font-size: .7rem;
+}
+
+
+#title{
+    font-size: 2rem;
+    font-weight:600;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+#word-1{
+
+    color:#1A2C42;
+
+}
+
+#word-2{
+
+    color: #BE2F29;
+
+}
+
+#word-3{
+    color: #ECAF44;
+}
+
+
+
+
+
+

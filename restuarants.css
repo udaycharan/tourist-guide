@@ -1,0 +1,154 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+   overflow-x: hidden;
+}
+
+
+header h1{
+    background-color: rgba(248, 248, 242, 0.849);
+    background-blend-mode: multiply;
+    min-height: 20%;
+    text-shadow: 4px 5px 6px rgba(162, 163, 163, 0.295);
+    color: #BE2F29 ;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#letter-1{
+    color: #1A2C42;
+}
+
+#letter-2{
+    color: #ECAF44;
+}
+
+#dot{
+    font-size: medium;
+    color: #ECAF44;
+}
+
+header{
+    width: 100%;
+    height: 100%
+}
+
+.img-holder{
+    padding: 1.5rem;
+    background-color: #f5d9a8;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2{
+    padding-right: 1rem;
+    font-size: 2.6rem;
+    text-shadow: 5px 6px 6px rgba(68, 67, 67, 0.438);
+    margin: auto;
+    color: #1f4b81;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 i{
+    color: #BE2F29;
+}
+
+
+
+.content{
+    background-color: rgb(231, 222, 222);
+    width: 100%;
+    min-height: 100%;
+}
+
+.title{
+    padding: 1rem;
+    font-weight: 600;
+    color: #BE2F29;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#word-1{
+    color: #1A2C42;
+}
+
+#word-2{
+    color: #ECAF44;
+   
+}
+.font{
+    font-family: 'Dancing Script', cursive;
+}
+
+.section-intro{
+    padding: 1rem;
+    margin: auto 2.5rem;
+
+}
+
+.restuarants-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.restuarant-box{
+    margin: auto 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+h4{
+    color: #BE2F29;
+}
+
+.detail-box{
+    border-right: 1px solid rgba(182, 178, 178, 0.342);
+    padding: 1rem;
+    width: 30%;
+    min-height: 50%;
+}
+
+ul{
+    margin: 3rem auto;
+    list-style-type: none;
+}
+
+ul li{
+    padding: .6rem;
+    text-decoration: dotted;
+    color: #6eaefc;
+}
+
+ul li:hover{
+    cursor: pointer;
+    color: #2d8cff;
+}
+
+.rating{
+    color: #b1a507;
+}
+
+.align{
+    width: 100%;
+    text-align: right;
+    padding: .8rem;
+}
+
+

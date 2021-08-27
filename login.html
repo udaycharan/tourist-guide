@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./login.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+         <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <title>Login to your account</title>
+</head>
+<body>
+
+    <header><strong id="text-size-dup"><span id="main-letter-dup1">T</span>ourist<span id="main-letter-dup2">G</span>uide</strong><small id="dotcom-dup">.com</small></header>
+
+    <div class="box-container">
+
+        <div id="back-link"><i class="fa fa-arrow-circle-left fa-lg" onclick ="history.back()" aria-hidden="true"></i></div>
+        <h1 id="login-title1">Login to <span id="login-title2">your</span> <span id="login-title3">account.</span></h1>
+
+    <form class="form-container">
+        <div class="inputs-box">
+        <div class="username-input">
+           
+            <label for="email" id="email-label">Email address:</label>
+            <div class="input-align">
+                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+            <input type="email" id="login-email" name="email" placeholder="Email"/>
+        </div>
+        </div>
+
+        <div class="password-input">
+            <label for="password" id="password-label">Password:</label>
+            <div class="input-align">
+                <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+            <input type="password" id="login-password" name="password" placeholder="Password"/>
+        </div> 
+        </div>
+
+        <div id="checkbox-check"> 
+            <input type="checkbox" id="checkbox" name="checkbox" value="on"/>
+            <label for="checkbox" id="checkbox-label">Keep me signed in</label>
+        </div>
+
+            <div class="btn-box">
+            <button id="submit-btn">LOGIN</button>
+
+            <a href="signup.html" target="_blank" id="signup-link">Don't have an account? create one!!</a>
+        </div>
+    </div>
+        
+    </form>
+</div>
+<script>
+    const btnGet = document.querySelector("#submit-btn");
+    btnGet.addEventListener("click", (event)=>{
+
+            // to prevent the default action/event of an html element on which the event is occured
+            event.preventDefault();
+            let emailInput;
+            let passwordInput;
+
+           const loginEmail = document.querySelector("#login-email").value;
+           const loginPassword = document.querySelector("#login-password").value;
+
+
+
+            // getting the data key from localstorage object and converting to array.
+             let dataBase = JSON.parse(localStorage.getItem("data"));
+
+
+
+             // looping through the obtained array which is here (dataBase[array of arrays])
+             for(let i=0; i< dataBase.length; i++){
+
+
+                //appying find method on array at each index and checking and matching the emailInput from user 
+                    emailInput = dataBase[i].includes(loginEmail);
+                    console.log(emailInput);
+
+            //appying find method on array at each index and checking and matching the password from user
+                    passwordInput = dataBase[i].includes(loginPassword);
+                    console.log(passwordInput);
+
+           
+
+                
+                //if both emailaddress and password matches then redirect user to landing page.
+                if(emailInput && passwordInput){
+                    location.replace("./tour-landing.html");
+                    return;
+                }
+
+                // else{
+                //     alert("Please Enter Valid login Details");
+                //     return;
+                // }
+    
+
+            }
+
+            alert("Please Enter valid details")
+
+        });
+
+</script>
+</body>
+</html>
